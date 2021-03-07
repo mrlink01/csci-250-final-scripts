@@ -129,7 +129,10 @@ def write_q1():
     col = 1
     for i in range(0,11):
         ws.write(row, col, i)
-        ws.write(row + 1, col, Q1_DICT[i])
+        try:
+            ws.write(row + 1, col, Q1_DICT[i])
+        except:
+            ws.write(row + 1, col, 0)
         col = col + 1
 
 def write_q3():
