@@ -127,9 +127,9 @@ def write_q1():
     ws.write('A3', "# of Responses:")
     row = 1
     col = 1
-    for key in Q1_DICT:
-        ws.write(row, col, key)
-        ws.write(row + 1, col, Q1_DICT[key])
+    for i in range(0,11):
+        ws.write(row, col, i)
+        ws.write(row + 1, col, Q1_DICT[i])
         col = col + 1
 
 def write_q3():
